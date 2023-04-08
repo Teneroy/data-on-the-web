@@ -34,7 +34,7 @@
         },
         {
             "url": "employment.csv",
-            "tableScheme": {
+            "tableSchema": {
                 "columns": [{
                     "name": "theatre_id",
                     "titles": {
@@ -84,7 +84,7 @@
         },
         {
             "url": "performance.csv",
-            "tableScheme": {
+            "tableSchema": {
                 "columns": [{
                     "name": "theatre_id",
                     "titles": {
