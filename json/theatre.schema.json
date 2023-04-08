@@ -1,0 +1,105 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "...",
+    "title": "Theatre",
+    "description": "A theatre in a particular city from the database of theatres",
+    "type": "object",
+    "properties": {
+        "id": "#/$defs/id",
+        "name": "#/$defs/name",
+        "employment": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "year": "#/$defs/year",
+                    "number": "#/$defs/number"
+                }
+            }
+        },
+        "performances": {
+            "type": "array",
+            "items": {
+                "title": "Performace",
+                "description": "Performace at the theater",
+                "type": "object",
+                "properties": {
+                    "name": "#/$defs/performanceName",
+                    "janre": "#/$defs/janre",
+                    "startDate": "#/$defs/startDate",
+                    "duration": "#/$defs/duration"
+                }
+            }
+        }
+    },
+    "required": ["id", "name", "employment"],
+    "$defs": {
+        "id": {
+            "type": "integer",
+            "minimum": 1,
+            "title": "Theatre ID",
+            "description": "Unique id of a theatre"
+        },
+        "name": {
+            "title": "Theatre name",
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 100,
+            "description": "The name of a theatre"
+        },
+        "year": {
+            "type": "integer",
+            "minimum": 1000,
+            "maximum": 2023,
+            "title": "Employment year",
+            "description": "Year in which people were employed"
+        },
+        "number": {
+            "title": "Employees number",
+            "type": "integer",
+            "exclusiveMinimum": 0,
+            "description": "Number of employees employed at the particular year"
+        },
+        "performanceName": {
+            "title": "Performace name",
+            "minLength": 2,
+            "maxLength": 100,
+            "description": "The name of performance",
+            "type": "string"
+        },
+        "janre": {
+            "title": "Performace janre",
+            "minLength": 2,
+            "maxLength": 30,
+            "description": "The janre of performance",
+            "type": "string"
+        },
+        "startDate": {
+            "title": "Performace datetime",
+            "description": "The date and time of the performance",
+            "type": "string",
+            "format": "date-time"
+        },
+        "duration": {
+            "title": "Performace duration",
+            "description": "Duration of the performance",
+            "type": "object",
+            "properties": {
+                "value": "#/$defs/durationValue",
+                "unit": "#/$defs/durationUnit"
+            }
+        },
+        "durationValue": {
+            "title": "Duration value",
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 10
+        },
+        "durationUnit": {
+            "title": "Duration unit",
+            "type": "string",
+            "maxLength": "10",
+            "minLength": "1"
+        }
+    }
+}
