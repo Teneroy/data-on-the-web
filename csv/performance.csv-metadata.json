@@ -1,0 +1,87 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "performance.csv",
+    "tableScheme": {
+        "columns": [{
+            "name": "theatre_id",
+            "titles": {
+                "en": "Theatre id",
+                "ru": "Aidi teatra"
+            },
+            "datatype": "unsignedLong",
+            "description": {
+                "en": "Id of some theatre which present in theatres table",
+                "ru": "Aidi teatra is tablici teatrov"
+            },
+            "required": true
+        }, {
+            "name": "name",
+            "titles": {
+                "en": "Performance title",
+                "ru": "Nazvanie piessi"
+            },
+            "datatype": "string",
+            "description": {
+                "en": "The title of performance that is being played",
+                "ru": "Nazvanie piessi igraemoi v teatre"
+            },
+            "required": true
+        }, {
+            "name": "janre",
+            "titles": {
+                "en": "Janre",
+                "ru": "Zhanr"
+            },
+            "datatype": "string",
+            "description": {
+                "en": "Janre of the performance",
+                "ru": "Zhanr piessi"
+            },
+            "required": true
+        }, {
+            "name": "start_date",
+            "titles": { 
+                "en": "Date and time",
+                "ru": "Data i vreamia"
+            },
+            "datatype": "string",
+            "required": true,
+            "description": {
+                "en": "Performance date and time",
+                "ru": "Data i vreamia piessi"
+            }
+        }, {
+            "name": "duration",
+            "titles": {
+                "en": "Duration",
+                "ru": "Prodolzitelnost"
+            },
+            "datatype": "string",
+            "required": true,
+            "description": {
+                "en": "Duration of the performance",
+                "ru": "Prodolzitelnost piessi"
+            }
+        }, {
+            "name": "duration_unit",
+            "titles": {
+                "en": "Duration unit",
+                "ru": "Ediniza izmerenia prodolzitelnosti"
+            },
+            "datatype": "string",
+            "required": true,
+            "description": {
+                "en": "The unit of the duration performance",
+                "ru": "Ediniza izmerenia prodolzitelnosti piessi"
+            }
+        }],
+        "primaryKey": ["theatre_id", "name", "start_date"],
+        "foreignKeys": {
+            "columnReference": "theatre_id",
+            "reference": {
+                "resource": "theatre.csv",
+                "columnReference": "id"
+            }
+        }
+    }
+}

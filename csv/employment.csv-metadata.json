@@ -1,0 +1,51 @@
+{
+    "@context": "http://www.w3.org/ns/csvw", 
+    "url": "employment.csv",
+    "tableScheme": {
+        "columns": [{
+            "name": "theatre_id",
+            "titles": {
+                "en": "Theatre id",
+                "ru": "Aidi teatra"
+            },
+            "datatype": "unsignedLong",
+            "description": {
+                "en": "Id of some theatre which present in theatres table",
+                "ru": "Aidi teatra is tablici teatrov"
+            },
+            "required": true
+        }, {
+            "name": "year",
+            "titles": {
+                "en": "Year",
+                "ru": "God"
+            },
+            "datatype": "unsignedInt",
+            "description": {
+                "en": "Year of employment",
+                "ru": "God po zaniatosti"
+            },
+            "required": true
+        }, {
+            "name": "employees_number",
+            "titles": {
+                "en": "Number of employees",
+                "ru": "Kolichestvo rabotnikov"
+            },
+            "datatype": "unsignedInt",
+            "description": {
+                "en": "Number of employees of the theatre",
+                "ru": "Kolichestvo rabotnikov teatra"
+            },
+            "required": true
+        }],
+        "primaryKey": ["theatre_id", "year"],
+        "foreignKeys": [{
+            "columnReference": "theatre_id",
+            "reference": {
+                "resource": "theatre.csv",
+                "columnReference": "id"
+            }
+        }]
+    }
+}
