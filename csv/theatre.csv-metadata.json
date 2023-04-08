@@ -10,7 +10,7 @@
             },
             "datatype": "unsignedLong",
             "required": true,
-            "description": {
+            "dc:description": {
                 "en": "unique id of the theatre",
                 "ru": "Unikalnii aidi teatra"
             }
@@ -20,7 +20,7 @@
                 "en": "name",
                 "ru": "imia"
             },
-            "description": {
+            "dc:description": {
                 "en": "The name of the particular theatre. Names may duplicate",
                 "ru": "Nazvanie teatra. Nazvania mogut povtoriatsia"
             },

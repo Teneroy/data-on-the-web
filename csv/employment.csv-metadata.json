@@ -9,7 +9,7 @@
                 "ru": "Aidi teatra"
             },
             "datatype": "unsignedLong",
-            "description": {
+            "dc:description": {
                 "en": "Id of some theatre which present in theatres table",
                 "ru": "Aidi teatra is tablici teatrov"
             },
@@ -21,7 +21,7 @@
                 "ru": "God"
             },
             "datatype": "unsignedInt",
-            "description": {
+            "dc:description": {
                 "en": "Year of employment",
                 "ru": "God po zaniatosti"
             },
@@ -33,7 +33,7 @@
                 "ru": "Kolichestvo rabotnikov"
             },
             "datatype": "unsignedInt",
-            "description": {
+            "dc:description": {
                 "en": "Number of employees of the theatre",
                 "ru": "Kolichestvo rabotnikov teatra"
             },

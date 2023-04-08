@@ -12,7 +12,7 @@
                     },
                     "datatype": "unsignedLong",
                     "required": true,
-                    "description": {
+                    "dc:description": {
                         "en": "unique id of the theatre",
                         "ru": "Unikalnii aidi teatra"
                     }
@@ -22,7 +22,7 @@
                         "en": "name",
                         "ru": "imia"
                     },
-                    "description": {
+                    "dc:description": {
                         "en": "The name of the particular theatre. Names may duplicate",
                         "ru": "Nazvanie teatra. Nazvania mogut povtoriatsia"
                     },
@@ -42,7 +42,7 @@
                         "ru": "Aidi teatra"
                     },
                     "datatype": "unsignedLong",
-                    "description": {
+                    "dc:description": {
                         "en": "Id of some theatre which present in theatres table",
                         "ru": "Aidi teatra is tablici teatrov"
                     },
@@ -54,7 +54,7 @@
                         "ru": "God"
                     },
                     "datatype": "unsignedInt",
-                    "description": {
+                    "dc:description": {
                         "en": "Year of employment",
                         "ru": "God po zaniatosti"
                     },
@@ -66,7 +66,7 @@
                         "ru": "Kolichestvo rabotnikov"
                     },
                     "datatype": "unsignedInt",
-                    "description": {
+                    "dc:description": {
                         "en": "Number of employees of the theatre",
                         "ru": "Kolichestvo rabotnikov teatra"
                     },
@@ -92,7 +92,7 @@
                         "ru": "Aidi teatra"
                     },
                     "datatype": "unsignedLong",
-                    "description": {
+                    "dc:description": {
                         "en": "Id of some theatre which present in theatres table",
                         "ru": "Aidi teatra is tablici teatrov"
                     },
@@ -104,7 +104,7 @@
                         "ru": "Nazvanie piessi"
                     },
                     "datatype": "string",
-                    "description": {
+                    "dc:description": {
                         "en": "The title of performance that is being played",
                         "ru": "Nazvanie piessi igraemoi v teatre"
                     },
@@ -116,7 +116,7 @@
                         "ru": "Zhanr"
                     },
                     "datatype": "string",
-                    "description": {
+                    "dc:description": {
                         "en": "Janre of the performance",
                         "ru": "Zhanr piessi"
                     },
@@ -129,7 +129,7 @@
                     },
                     "datatype": "string",
                     "required": true,
-                    "description": {
+                    "dc:description": {
                         "en": "Performance date and time",
                         "ru": "Data i vreamia piessi"
                     }
@@ -141,7 +141,7 @@
                     },
                     "datatype": "string",
                     "required": true,
-                    "description": {
+                    "dc:description": {
                         "en": "Duration of the performance",
                         "ru": "Prodolzitelnost piessi"
                     }
@@ -153,7 +153,7 @@
                     },
                     "datatype": "string",
                     "required": true,
-                    "description": {
+                    "dc:description": {
                         "en": "The unit of the duration performance",
                         "ru": "Ediniza izmerenia prodolzitelnosti piessi"
                     }
