@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "...",
+    "$id": "https://raw.githubusercontent.com/Teneroy/data-on-the-web/main/json/theatre.schema.json",
     "title": "Theatre",
     "description": "A theatre in a particular city from the database of theatres",
     "type": "object",
